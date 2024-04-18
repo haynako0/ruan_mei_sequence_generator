@@ -23,9 +23,19 @@ body, html, .container {
 
 .brand-text {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 48px;
+    font-size: 55px;
     color: #007bff;
     text-align: center;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+.result {
+    margin-top: 40px;
+    color: white;
+    font-weight: bold;
+    background-color: #007bff;
+    padding: 10;
+    margin: 5%;
+    border-radius: 15px;
 }

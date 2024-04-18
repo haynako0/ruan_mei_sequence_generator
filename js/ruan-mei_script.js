@@ -18,11 +18,8 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
                 case 'geometric':
                     result = generateGeometricSequence(firstNumberValue, rangeValue, commonDifferenceValue);
                     break;
-                case 'fibonacci':
-                    result = generateFibonacciSequence(firstNumberValue, rangeValue);
-                    break;
             }
-            alert(result);
+            calculateRslt.innerHTML = `<h1 class="result"> ${result} </h1>`;
         } else {
             alert('Please enter valid numbers.');
         }
@@ -43,18 +40,6 @@ function generateGeometricSequence(firstNumber, range, commonDifference) {
     let sequence = '';
     for (let i = 0; i < range; i++) {
         sequence += (firstNumber * Math.pow(commonDifference, i)) + ', ';
-    }
-    return sequence.slice(0, -2);
-}
-
-function generateFibonacciSequence(firstNumber, range) {
-    let sequence = '';
-    let a = 0, b = 1;
-    for (let i = 0; i < range; i++) {
-        sequence += a + ', ';
-        let temp = a;
-        a = b;
-        b = temp + b;
     }
     return sequence.slice(0, -2);
 }

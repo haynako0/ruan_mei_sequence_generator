@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/ruan-mei_styles.css">
 </head>
 <body>
-    <div class="container d-flex justify-content-center align-items-center h-100">
+    <div class="container d-flex justify-content-center align-items-center h-100 text-center">
         <div>
             <h1 class="brand-text">
                 Ruan Mei's Sequence Generator
@@ -18,15 +18,15 @@
             </video>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="firstNumber">First Number</span>
-                <input type="number" class="form-control" id="firstNumberInput" aria-describedby="firstNumber">
+                <input type="number" class="form-control text-center" id="firstNumberInput" aria-describedby="firstNumber">
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="range">Range</span>
-                <input type="number" class="form-control" id="rangeInput" aria-describedby="range">
+                <input type="number" class="form-control text-center" id="rangeInput" aria-describedby="range">
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="commonDifference">Common Difference</span>
-                <input type="number" class="form-control" id="commonDifferenceInput" aria-describedby="commonDifference">
+                <input type="number" class="form-control text-center" id="commonDifferenceInput" aria-describedby="commonDifference">
             </div>
             <div class="input-group mb-3">
                 <label class="input-group-text" for="sequenceType">Sequence Type</label>
@@ -34,11 +34,11 @@
                     <option selected>Choose...</option>
                     <option value="arithmetic">Arithmetic</option>
                     <option value="geometric">Geometric</option>
-                    <option value="fibonacci">Fibonacci</option>
                 </select>
             </div>
-            <div class="text-center">
-                <button id="calculateBtn" class="btn btn-primary">Calculate</button>
+            <div class="text-center justify-content-center">
+                <button id="calculateBtn" class="btn btn-primary">Calculate</button> 
+                <p id="calculateRslt"></p>
             </div>
         </div>
     </div>
